@@ -13,7 +13,16 @@
 <form action="upload.jsp" method="post" 
 	class="dropzone" id="myForm">
 	<input type="file" name="myFile"/>
-</form>
+</form>	
+<script>
+	//Dropzone.options.폼의 아이디={옵션명:옵션값};
+	Dropzone.options.myForm={
+			paramName:"myFile",
+			success:function(file,responseData){
+				console.log(responseData);
+			}
+	}
+</script>
 </body>
 </html>
 

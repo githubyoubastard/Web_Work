@@ -6,7 +6,6 @@ public class BoardDto {
 	private String title; //제목
 	private String content; //내용
 	private String regdate; //등록일 
-	
 	public BoardDto() {}
 
 	public BoardDto(int num, String writer, String title, String content, String regdate) {
